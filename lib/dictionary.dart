@@ -25,8 +25,7 @@ class _DictionaryState extends State<Dictionary> {
   Map word = {};
   @override
   Widget build(BuildContext context) {
-    setUpMeaning();
-    
+    setUpMeaning();    
 
     return Container(
       decoration: BoxDecoration(

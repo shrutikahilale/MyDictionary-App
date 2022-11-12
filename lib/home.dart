@@ -25,7 +25,8 @@ class _HomeState extends State<Home> {
         ),
         backgroundColor: Colors.blueGrey[800],
         body: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 16.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 50.0, horizontal: 16.0),
             child: ListView(
               children: [
                 const SizedBox(height: 150.0),
@@ -53,9 +54,9 @@ class _HomeState extends State<Home> {
                 ElevatedButton(
                   onPressed: () {
                     word = textEditingController.text;
-                    Navigator.pushNamed(context, '/dictionary', arguments: {
-                      'word': word,
-                    });
+                    Navigator.pushNamed(context, '/dictionary',
+                        arguments: {'word': word});
+                    textEditingController.clear();
                   },
                   style: ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(
