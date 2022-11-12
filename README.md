@@ -1,6 +1,9 @@
 # MyDictionaryApp
  App development in Flutter
  
+ - Http requests
+ - SpinKit library 
+ 
 0. Splash Screen:
 
 ![splashscreen](https://user-images.githubusercontent.com/102667828/201477622-faa42c04-7cdd-43e4-a832-f4a856851f33.png)
