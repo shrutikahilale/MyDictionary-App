@@ -12,7 +12,6 @@ class FetchWord {
       var response = await http.get(
           Uri.parse('https://api.dictionaryapi.dev/api/v2/entries/en/$word'));
       var data = json.decode(response.body);
-      print(data);
 
       // * data[0]['meanings'][0];
       // * this is a var of type dictionary
@@ -22,7 +21,6 @@ class FetchWord {
       word = word == '' ? 'no word received' : word;
       meaning = 'not found';
       partOfSpeech = 'not found';
-      print('hello');
     }
   }
 }

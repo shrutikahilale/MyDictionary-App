@@ -13,7 +13,6 @@ class _DictionaryState extends State<Dictionary> {
 
     FetchWord fetchWord = FetchWord(word: word['word']);
     await fetchWord.getMeaning();
-    print('yes');
 
     // ignore: use_build_context_synchronously
     Navigator.popAndPushNamed(context, '/dictionary_layout', arguments: {
@@ -34,7 +33,7 @@ class _DictionaryState extends State<Dictionary> {
         color: Colors.blueGrey[900],
       ),
       child: const Center(
-        child: SpinKitFadingCircle(
+        child: SpinKitChasingDots(
           color: Colors.white,
           size: 70.0,
         ),

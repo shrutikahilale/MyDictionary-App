@@ -15,51 +15,41 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.blueGrey[900],
+        appBar: AppBar(
+          title: const Text('MyDictionary'),
+          leading: const Image(
+            image: AssetImage('assets/dictionary_icon.png'),
+            height: 10.0,
+          ),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        backgroundColor: Colors.blueGrey[800],
         body: Padding(
-            padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 16.0),
+            padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 16.0),
             child: ListView(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image(
-                      image: AssetImage('assets/dictionary_icon.png'),
-                      height: 90.0,
-                    ),
-                    // SizedBox(width: 2.0),
-                    Text(
-                      'MyDictionary',
-                      style: TextStyle(
-                        fontSize: 40.0,
-                        fontFamily: 'WorkSans-Regular',
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 150.0),
+                const SizedBox(height: 150.0),
                 TextField(
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontFamily: 'WorkSans-Regular',
                   ),
                   controller: textEditingController,
                   decoration: InputDecoration(
                       hintText: homeText,
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         fontSize: 18.0,
-                        color: Colors.white,
+                        color: Color.fromARGB(64, 255, 255, 255),
                       ),
                       suffixIcon: IconButton(
                         onPressed: () {
                           textEditingController.clear();
                         },
-                        icon: Icon(Icons.close),
+                        icon: const Icon(Icons.close),
                         color: Colors.white,
                       )),
                 ),
-                SizedBox(height: 30.0),
+                const SizedBox(height: 30.0),
                 ElevatedButton(
                   onPressed: () {
                     word = textEditingController.text;
@@ -69,9 +59,9 @@ class _HomeState extends State<Home> {
                   },
                   style: ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(
-                      Colors.blueGrey[800],
+                      Colors.blueGrey[100],
                     ),
-                    padding: MaterialStatePropertyAll(
+                    padding: const MaterialStatePropertyAll(
                       EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
                     ),
                   ),
@@ -80,6 +70,7 @@ class _HomeState extends State<Home> {
                     style: TextStyle(
                       fontSize: 24.0,
                       fontFamily: 'WorkSans-Regular',
+                      color: Colors.blueGrey[900],
                     ),
                   ),
                 )

@@ -18,7 +18,7 @@ class _MyDictState extends State<MyDict> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Word Meaning',
           style: TextStyle(
             fontFamily: 'WorkSans-Regular',
@@ -27,11 +27,11 @@ class _MyDictState extends State<MyDict> {
         backgroundColor: Colors.blueGrey[900],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+        padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Text(
@@ -42,7 +42,7 @@ class _MyDictState extends State<MyDict> {
                 color: Colors.blueGrey[900],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
             Row(
@@ -53,10 +53,9 @@ class _MyDictState extends State<MyDict> {
                     fontSize: 22.0,
                     fontFamily: 'WorkSans-Regular',
                     color: Colors.blueGrey[900],
-                    decoration: TextDecoration.underline,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10.0,
                 ),
                 Text(
@@ -69,7 +68,7 @@ class _MyDictState extends State<MyDict> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Text(
@@ -78,10 +77,9 @@ class _MyDictState extends State<MyDict> {
                 fontSize: 22.0,
                 fontFamily: 'WorkSans-Regular',
                 color: Colors.blueGrey[900],
-                decoration: TextDecoration.underline,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Text(
